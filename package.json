@@ -1,0 +1,25 @@
+{
+  "name": "e-commerce-smoke-suite",
+  "version": "1.0.0",
+  "description": "E-Commerce Smoke Test Suite with Playwright + TypeScript",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "e2e",
+    "smoke-tests"
+  ],
+  "author": "Harold Mejia",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.5.2",
+    "typescript": "^6.0.2"
+  }
+}

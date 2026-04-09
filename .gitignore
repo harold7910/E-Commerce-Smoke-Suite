@@ -1,0 +1,25 @@
+node_modules/
+dist/
+
+# Auth state (generated locally by auth.setup.ts)
+.auth/
+
+# Test artifacts (generated on each run)
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Claude Code local config
+.claude/
+
+# IDE
+.vscode/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Environment
+.env
+.npmrc
