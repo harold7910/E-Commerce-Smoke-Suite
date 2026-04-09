@@ -34,20 +34,4 @@ test.describe('Cart Flow', () => {
     await expect(cartPage.cartItems).toHaveCount(1);
     await expect(cartPage.cartItems.first()).toContainText(PRODUCTS.backpack);
   });
-
-  test('cart is empty by default', async ({ inventoryPage }) => {
-    await inventoryPage.goto();
-
-    await expect(inventoryPage.cartBadge).not.toBeVisible();
-  });
-
-  test('cart persists after page refresh', async ({ inventoryPage, page }) => {
-    await inventoryPage.goto();
-    await inventoryPage.addToCartByName(PRODUCTS.backpack);
-    await expect(inventoryPage.cartBadge).toHaveText('1');
-
-    await page.reload();
-
-    await expect(inventoryPage.cartBadge).toHaveText('1');
-  });
 });

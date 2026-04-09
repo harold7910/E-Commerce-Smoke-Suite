@@ -21,17 +21,17 @@ export class InventoryPage extends BasePage {
 
   async addToCartByIndex(index: number) {
     const item = this.inventoryItems.nth(index);
-    await item.getByRole('button', { name: 'Add to cart' }).click();
+    await item.locator(InventoryLocators.addToCartButton).click();
   }
 
   async addToCartByName(productName: string) {
     const item = this.inventoryItems.filter({ hasText: productName });
-    await item.getByRole('button', { name: 'Add to cart' }).click();
+    await item.locator(InventoryLocators.addToCartButton).click();
   }
 
   async removeFromCartByName(productName: string) {
     const item = this.inventoryItems.filter({ hasText: productName });
-    await item.getByRole('button', { name: 'Remove' }).click();
+    await item.locator(InventoryLocators.removeButton).click();
   }
 
   async goToCart() {
