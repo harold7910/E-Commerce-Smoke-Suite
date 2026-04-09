@@ -3,5 +3,4 @@ export const CartLocators = {
   cartItem: 'inventory-item',
   checkoutButton: 'checkout',
   continueShoppingButton: 'continue-shopping',
-  removeButton: 'button:has-text("Remove")',
 } as const;

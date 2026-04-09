@@ -25,7 +25,7 @@ export class CartPage extends BasePage {
 
   async removeItemByName(productName: string) {
     const item = this.cartItems.filter({ hasText: productName });
-    await item.locator(CartLocators.removeButton).click();
+    await item.getByRole('button', { name: 'Remove' }).click();
   }
 
   async proceedToCheckout() {
