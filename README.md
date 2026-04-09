@@ -1,5 +1,7 @@
 # E-Commerce Smoke Suite
 
+> **Repository:** [github.com/harold7910/E-Commerce-Smoke-Suite](https://github.com/harold7910/E-Commerce-Smoke-Suite)
+
 Smoke test suite for [SauceDemo](https://www.saucedemo.com) built with **Playwright** and **TypeScript**, demonstrating optimization and parallelism capabilities.
 
 ## Architecture
